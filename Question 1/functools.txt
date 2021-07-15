@@ -1,0 +1,10 @@
+A simple approach is to use the lru_cache decorator from the functools library. This solves the problem but we are not really implementing it so I will also include a second approach where I implement the LRU cache myself.
+
+********************************
+from functools import lru_cache
+
+@lru_cache(N)
+def get_book_info(isbn):
+    pass
+
+********************************
