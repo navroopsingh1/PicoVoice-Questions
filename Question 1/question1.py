@@ -25,5 +25,4 @@ def get_book_info(isbn):
 
 def get_book_info_wrapper(isbn : str, cache: LRUCache) -> List[str, str, str]:
     cache.set(isbn, get_book_info(isbn))
-    return cache.set(isbn)
-    
+    return cache.get(isbn)
